@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+form label {
+    font-weight: bold;
+}
+
+.box-info {
+    visibility: hidden;
+}
+
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header h1 {
+    font-family: Pacifico;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #3b82f6;
+    /* Vibrant blue */
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 1px 1px 5px rgba(59, 130, 246, 0.3);
+}
+
+/* Bookmark section styling */
+.bookmarker h3 {
+    font-size: 1.8rem;
+    color: #4b5563;
+    /* Neutral dark gray */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.bookmarker form {
+    background: #ffffff;
+    /* Pure white for contrast */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.bookmarker label {
+    font-weight: 600;
+    color: #1f2937;
+    /* Dark gray for text */
+    margin-bottom: 8px;
+}
+
+.bookmarker input {
+    border: 1px solid #e5e7eb;
+    /* Light gray border */
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.bookmarker input:focus {
+    border-color: #3b82f6;
+    /* Vibrant blue focus */
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+    outline: none;
+}
+
+/* Modern button styling */
+.bookmarker button {
+    background: linear-gradient(90deg, #3b82f6, #2563eb);
+    /* Blue gradient */
+    color: #ffffff;
+    /* White text */
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bookmarker button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+}
+
+.bookmarker button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.5);
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: #ffffff;
+    /* Clean white */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+table thead {
+    background-color: #3b82f6;
+    /* Blue header */
+    color: #ffffff;
+}
+
+table th, table td {
+    padding: 15px;
+    font-size: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    /* Light border */
+}
+
+table tbody tr:hover {
+    background-color: #f9fafb;
+    /* Light hover */
+}
+
+table tbody a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Error box styling */
+#errorBox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent overlay */
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-conent {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.box-header .circles span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.box-header .circles .one {
+    background-color: #ef4444;
+    /* Red */
+}
+
+.box-header .circles .two {
+    background-color: #f59e0b;
+    /* Yellow */
+}
+
+.box-header .circles .three {
+    background-color: #10b981;
+    /* Green */
+}
+
+#closeBtn {
+    color: #6b7280;
+    /* Neutral gray */
+    transition: transform 0.2s ease-in-out;
+}
+
+#closeBtn:hover {
+    transform: rotate(90deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bookmarker form {
+        padding: 15px;
+    }
+
+    table th, table td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+.visit a {
+    color: black;
+    text-decoration: none;
+}
+
+.delete {
+    color: black;
+}
